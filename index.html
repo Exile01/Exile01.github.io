@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Yebo HTML5 CSS3 Template</title>
+		<title> Appolysus </title>
+		<style> [data-sr] { visibility: hidden; }</style>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/styles.css?v=1.2" rel="stylesheet">
@@ -29,18 +30,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<nav>
-							<div class="logo-holder"></div>
-							<ul class="clearfix">
-								<li><a href="#about" class="scrolly">About Us</a></li>
-								<li class="dot">.</li>
-								<li><a href="#work" class="r_spacer">Work</a></li>
-								<li><a href="#shop">Shop</a></li>
-								<li class="dot">.</li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
+					<div class="col-md-12">
+						<nav class="cl-effect-14">
+					<a href="#">Ailurophile</a>
+					<a href="#">Sumptuous</a>
+					<a href="#">Scintilla</a>
+					<a href="#">Propinquity</a>
+					<a href="#">Harbinger</a>
+				</nav>
 					</div>
 				</div>
 			</div>
@@ -48,7 +45,7 @@
 		</header>
 		<div class="container-fluid intro" id="about">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-8 col-md-offset-2" data-sr="enter from top over 0.8s and move 100px">
 					<h1 class="chain">A new generation of vintage bike</h1>
 					<p class="text-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 				</div>
@@ -56,16 +53,16 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 section-1 nopadding" id="work">
+				<div class="col-md-8 section-1 nopadding" id="work" data-sr="enter from left over 0.6s and move 100px">
 					<div class="logo-1 wp1"></div>
 				</div>
 				<div class="col-md-4 section-text nopadding">
-					<div class="wp4">
+					<div class="wp4" >
 						<h2 class="frame">Vintage Oliva</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
 						<div class="thin-sep"></div>
 					</div>
-					<div class="small-featured-img seat-red">
+					<div class="small-featured-img seat-red" data-sr="enter from right over 0.6s and move 50px">
 						<div class="arrow"></div>
 					</div>
 				</div>
@@ -274,8 +271,21 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/scrollReveal.min.js"></script>
 		<script src="js/jquery.flexslider.js"></script>
 		<script src="js/scripts.js"></script>
+		<script>
+      		(function($) {
+
+        window.sr= new scrollReveal({
+          reset: true,
+          mobile: true
+        });
+
+      })();
+      		
+		
+    	</script>
 		<script src="js/modernizr.js"></script>
 		<script src="js/waypoints.min.js"></script>
 	</body>
