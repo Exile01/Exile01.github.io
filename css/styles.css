@@ -1,5 +1,5 @@
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
-
+ 
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
@@ -7,6 +7,10 @@ HTML5 display definitions
  {
  	font-family:'Open Sans';
  	src:url('../fonts/OpenSans-Light.ttf');
+ }
+ p,h1,h2,h3,h4,h5,h6,a
+ {
+ 	font-family:'Open Sans';
  }
 /* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
  
@@ -35,12 +39,7 @@ html { font-size: 100%; /* 1 */
 html, button, input, select, textarea { font-family: sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 body { margin: 0; font-family: 'Lato', sans-serif; overflow-x: hidden; }
-html, body 
-{ 
-	width: auto !important; 
-	overflow-x: hidden !important; 
-	height:100%; 
-}
+html, body { width: auto !important; overflow-x: hidden !important; }
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -188,8 +187,8 @@ h1.chain
 	  text-transform: uppercase;
 	   color: #353738;
 	    letter-spacing: 2px;
-	     font-size: 4em;
-	      font-weight: 200;
+	     font-size: 5em;
+	      font-weight: 300;
 	       background: url(../img/cog-icon.png) no-repeat top center;
 	        padding-top: 75px;
 }
@@ -206,58 +205,18 @@ User Styles
 /* ==========================================================================
 User Styles
 ========================================================================== */
-.clearfix:before, .clearfix:after 
-{ 
-	content: " ";
-	 display: table; 
-	 }
-.clearfix:after 
-{ 
-	clear: both; 
-	}
-.clearfix 
-{ 
-	*zoom: 1;
-	 }
-.pullcontainer a#pull 
-{ 
-	display: none; 
-	}
-	h1,h2,h3,h4,h5,h6,p,a
-	{
-		font-family: 'Open Sans';
-	}
-a
- { 
- 	color: #282f35;
- 	 -webkit-transition: all .25s ease;
- 	  -moz-transition: all .25s ease;
- 	   -ms-transition: all .25s ease;
- 	    -o-transition: all .25s ease;
- 	     transition: all .25s ease; 
- 	     }
-a:hover 
-{
-		color:#fff;
-	  text-decoration: none; 
-	  }
-p
- {
- 	 text-align: center;
- 	  font-size: 14px;
- 	   color: #848789;
- 	    font-weight: 300;
- 	     word-spacing: 2px;
- 	      line-height: 1.8em;
- 	       margin-top: 25px;
- 	        }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.pullcontainer a#pull { display: none; }
+a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
+a:hover { color: #fff; text-decoration: none; }
+p { text-align: center; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px; }
 p.text-intro { font-size: 18px; }
-.hero { background: none no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
-
+.hero { background: none; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
+nav { height: 85px; margin-top: 30px; position: relative; }
 .logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
-.responsive-logo { display: hidden; }
-
-header 
+.responsive-logo { display: hidden; }header 
 {
 	 background:url('../img/homebg.jpg') fixed;
 	 background-size: cover;
@@ -342,9 +301,6 @@ footer p { font-size: 13px; margin: 0; }
     box-sizing: border-box;
 }
 
-body {
-	font-family: 'Raleway', sans-serif;
-}
 nav
 {
 	display: inline;
@@ -438,6 +394,3 @@ nav a:focus {
 	-moz-transform: rotate(0deg) translateX(50%);
 	transform: rotate(0deg) translateX(50%);
 }
-/* ////////////  Nav menu  //////////// */
-
-
