@@ -394,3 +394,18 @@ nav a:focus {
 	-moz-transform: rotate(0deg) translateX(50%);
 	transform: rotate(0deg) translateX(50%);
 }
+
+/* New changes */
+#members
+{
+	padding: 3em 0 2em 0;
+}
+.memimg
+{
+	width: 100%;
+	overflow: hidden;
+}
+.memimg img
+{
+	width: 100%;
+}
