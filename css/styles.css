@@ -1,9 +1,13 @@
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
- 
+
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
- 
+ @font-face
+ {
+ 	font-family:'Open Sans';
+ 	src:url('../fonts/OpenSans-Light.ttf');
+ }
 /* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
  
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
@@ -31,7 +35,12 @@ html { font-size: 100%; /* 1 */
 html, button, input, select, textarea { font-family: sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 body { margin: 0; font-family: 'Lato', sans-serif; overflow-x: hidden; }
-html, body { width: auto !important; overflow-x: hidden !important; }
+html, body 
+{ 
+	width: auto !important; 
+	overflow-x: hidden !important; 
+	height:100%; 
+}
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -173,7 +182,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
 Headings
 ========================================================================== */
-h1.chain { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/cog-icon.png) no-repeat top center; padding-top: 75px; }
+h1.chain 
+{
+	 text-align: center;
+	  text-transform: uppercase;
+	   color: #353738;
+	    letter-spacing: 2px;
+	     font-size: 4em;
+	      font-weight: 200;
+	       background: url(../img/cog-icon.png) no-repeat top center;
+	        padding-top: 75px;
+}
 h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/frame-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
 h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/mech-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
 h2.front-frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/front-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
@@ -204,6 +223,10 @@ User Styles
 { 
 	display: none; 
 	}
+	h1,h2,h3,h4,h5,h6,p,a
+	{
+		font-family: 'Open Sans';
+	}
 a
  { 
  	color: #282f35;
@@ -229,15 +252,16 @@ p
  	       margin-top: 25px;
  	        }
 p.text-intro { font-size: 18px; }
-.hero { background: none) no-repeat top center #f4f5fc; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
-nav { height: 85px; margin-top: 30px; position: relative; }
+.hero { background: none no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
+
 .logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
 .responsive-logo { display: hidden; }
 
 header 
 {
-	 background:url('../img/homebg.jpg');
+	 background:url('../img/homebg.jpg') fixed;
 	 background-size: cover;
+	 height: 100%;
 }
 header ul { padding-top: 35px; }
 header ul li { list-style: none; float: left; text-transform: uppercase; letter-spacing: 2px; }
@@ -321,11 +345,15 @@ footer p { font-size: 13px; margin: 0; }
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
+nav
+{
+	display: inline;
+}
 nav a {
 	position: relative;
 	display: inline-block;
-	margin: 15px 25px;
+	text-align:center;
+	margin: 0.5em ;
 	outline: none;
 	color: #fff;
 	text-decoration: none;
@@ -333,7 +361,11 @@ nav a {
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;
+	font-size: 1em;
+}
+nav ul li a
+{
+	color: #fff;
 }
 
 nav a:hover,
@@ -406,3 +438,6 @@ nav a:focus {
 	-moz-transform: rotate(0deg) translateX(50%);
 	transform: rotate(0deg) translateX(50%);
 }
+/* ////////////  Nav menu  //////////// */
+
+
