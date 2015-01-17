@@ -482,7 +482,7 @@ nav a:focus {
 	margin-top:0 !important;
 	border-width: 0px;
 	border-style: solid;
-	border-color: #333;
+	border-color: #37354f;
 	background-color: rgba(0,0,0,0);
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
@@ -491,7 +491,7 @@ nav a:focus {
 
 .bt-menu.bt-menu-open {
 	height: 100%;
-	border-width: 30px 30px 90px 30px;
+	border-width: 10px 10px 90px 10px;
 	background-color: rgba(0,0,0,0.3);
 	-webkit-transition: border-width 0.3s, background-color 0.3s;
 	transition: border-width 0.3s, background-color 0.3s;
@@ -505,7 +505,49 @@ nav a:focus {
 .bt-menu-open .bt-overlay {
 	height: 100%;
 }
-
+#menuholder
+{
+	padding: 3em;
+	background: rgba(55, 53, 79,0.7);
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	left: 47%;
+	transition:all 0.2s;
+}
+#menuholder:hover
+{
+	background: rgba(55, 53, 79,1);
+}
+@media screen and (max-width:1000px)
+{
+	#menuholder
+	{
+		left: 45%;
+	}
+}
+@media screen and (max-width:800px)
+{
+	#menuholder
+	{
+		left: 43%;
+	}
+}
+@media screen and (max-width:500px)
+{
+	#menuholder
+	{
+		left: 42%;
+	}
+}
+@media screen and (max-width:300px)
+{
+	#menuholder
+	{
+		left: 38%;
+		padding: 2.5em;
+	}
+}
 .bt-menu-trigger {
 	position: fixed;
 	bottom: 22px;
