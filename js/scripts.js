@@ -1,3 +1,4 @@
+
 //FLEXSLIDER
 $(window).load(function() {
   $('.flexslider').flexslider({

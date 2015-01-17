@@ -218,7 +218,7 @@ nav { height: 85px; margin-top: 30px; position: relative; }
 .logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
 .responsive-logo { display: hidden; }header 
 {
-	 background:url('../img/homebg.jpg') fixed;
+	 background:url('../img/hd2.jpg') fixed;
 	 background-size: cover;
 	 height: 100%;
 }
@@ -408,4 +408,41 @@ nav a:focus {
 .memimg img
 {
 	width: 100%;
+}
+
+#teamhdin
+{
+	text-align: center;
+	font-size: 3em;
+}
+.steps
+{
+	background: url('../img/steps.jpg');
+	background-size: cover;
+	background-position: center;
+
+}
+
+/* ////////  //////// */
+
+.large-header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background:url('../img/steps.jpg');
+	background-size:cover;
+	background-position:center;
+	z-index: 1;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
 }

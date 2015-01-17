@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
 		<link href="css/styles.css?v=1.2" rel="stylesheet">
 		<link href="css/queries.css?v=1.2" rel="stylesheet">
 		<link href="css/component1.css" rel="stylesheet" />
+		<link href="css/component2.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
 		<link rel="stylesheet" href="css/animate.css" type="text/css">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -44,7 +45,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="hero"></div>
+			<div class="demo-2">
+			<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title"> Appolysus </span></h1>
+                </div>
+                </div>
+                </div>
 		</header>
 		<div class="container-fluid intro" id="about">
 			<div class="row">
@@ -53,17 +61,17 @@
 					<p class="text-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 				</div>
 			</div>
+		
 			<!-- Members -->
 			<div class="wrapper">
+				<h1 id="teamhdin"> Our Team</h1>
 				<ul class="stage clearfix">
 
 					<li class="scene">
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									
-								</header>
+								
 								
 							</div>
 						</div>
@@ -73,9 +81,7 @@
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									
-								</header>
+							
 								
 							</div>
 						</div>
@@ -85,9 +91,7 @@
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									
-								</header>
+								
 								
 							</div>
 						</div>
@@ -96,21 +100,7 @@
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									
-								</header>
 								
-							</div>
-						</div>
-					</li>
-
-					<li class="scene">
-						<div class="movie" onclick="return true">
-							<div class="poster"></div>
-							<div class="info">
-								<header>
-									
-								</header>
 								
 							</div>
 						</div>
@@ -120,9 +110,17 @@
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									
-								</header>
+								
+								
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								
 								
 							</div>
 						</div>
@@ -341,8 +339,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-4 footer-rightcol">
-						<p>Designed by <a href="#"><img src="img/yebo-icon.png" alt="Yebo Logo"></a></p>
-						<p class="nopadding">Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
+						
 					</div>
 				</div>
 			</div>
@@ -350,10 +347,15 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		
+		 <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.flexslider.js"></script>
+		
+		<script src="js/waypoints.min.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/modernizr.js"></script>
-		<script src="js/waypoints.min.js"></script>
+		
 	</body>
 </html>
