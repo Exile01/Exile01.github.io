@@ -3,11 +3,7 @@
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
- @font-face
- {
- 	font-family:'Open Sans';
- 	src:url('../fonts/OpenSans-Light.ttf');
- }
+
  p,h1,h2,h3,h4,h5,h6,a
  {
  	font-family:'Open Sans';
@@ -789,8 +785,8 @@ nav a:focus {
 	background: url('../img/steps.jpg') fixed;
 	background-size: cover;
 	background-position: center;
-	height: 700px;
 	margin-top: 3em !important;
+	padding: 3em !important;
 }
 .grid
 {
@@ -830,6 +826,7 @@ nav a:focus {
 	-o-transform: scale(1.1);
 	
 }
+
 #rndm1
 {
 	padding-top: 170px;
@@ -850,4 +847,28 @@ nav a:focus {
 	font-size: 5em;
 	color: #fff;
 	text-align: center;
+}
+#rndm2 h3
+{
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+}
+#rndm2 a
+{
+	text-align: center;
+	padding:0.5em 1em;
+	font-size:2em;
+	background: #fff;
+	color: #000;
+	margin: 0 auto;
+	display: block;
+	width:9em;
+	border: 1px solid transparent;
+}
+#rndm2 a:hover
+{
+	border-color: #fff;
+	background: none;
+	color: #fff;
 }
