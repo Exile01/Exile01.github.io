@@ -15,6 +15,7 @@
 		<link href="css/component1.css" rel="stylesheet" />
 		<link href="css/component2.css" rel="stylesheet" />
 		<link href="css/component3.css" rel="stylesheet" />
+		<link href="css/tooltip-curved.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
 		<link rel="stylesheet" href="css/animate.css" type="text/css">
 		
@@ -27,6 +28,7 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div id="marker"></div>
 		<header>
 		<!--	<div id="nav">
 						<nav class="cl-effect-14">
@@ -326,18 +328,41 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="container-fluid" id="contact">
+		<section class="flex-container">
+			<div class="container-fluid" id="contact">
 			<div class="row" id="feed">
 				<div id="feedbox">
+					<h2 id="feedhdin"> Want to start a project?<br /> We can help <span style="color: rgb(255, 71, 71)">you</span></h2>
 					<form>
-						<input type="text" placeholder="Name" />
-						<input type="email" placeholder="Email ID"/>
-						<input type="text" placeholder="" />
+						<input type="text" placeholder="Name" id="namefield" />
+						<input type="email" placeholder="Email ID" id="emailfield"/>
+						<input type="text" placeholder="Message" id="messagefield" /><br />
 						<input type="submit" />
 					</form>
 				</div>
 			</div>
 		</div>
+		<div class="container-fluid">
+			<div class="row" id="emailcont">
+				<div class="col-md-12 nopadding" id="em">
+					<div id="mapmarker"><img src="img/mapmarker.png" /></div>
+					<div id="mapinfo"> Appolysus HD <br /> Address </div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="container-fluid">
+			<iframe
+			  width=100%
+			  height="450"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCwJaU_0qrRkenAK-2bcTcQ2XCPz4hjqR0
+			    &q=Appolysus+Belur+road+Salkia+Howrah,WestBengal">
+			</iframe>
+		</div>
+		</section>
+		
 		<footer>
 			<div class="container">	
 				<div class="row">

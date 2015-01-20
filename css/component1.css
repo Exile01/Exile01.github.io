@@ -169,28 +169,28 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(../img/satanik.jpg);
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url(../img/poster02.jpg);
+  background-image: url(../img/sayantan.jpg);
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(../img/chayan.jpg);
 }
 
 
 .scene:nth-child(4) .movie .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(../img/suman.jpg);
 }
 
 .scene:nth-child(5) .poster {
-  background-image: url(../img/poster02.jpg);
+  background-image: url(../img/adrika.jpg);
 }
 
 .scene:nth-child(6) .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(../img/debanjan.jpg);
 }
 
 /*************************************
