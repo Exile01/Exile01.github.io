@@ -49,7 +49,7 @@
 				</div>
 				
 			</div>
-			<div class="demo-2">
+			<div class="demo-1">
 			<div class="content">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
@@ -155,11 +155,12 @@
 			
 			
 		</div>
-		<div class="container-fluid">
-			<h1 id="porthdin">Portfolio</h1>
+		<div class="container-fluid" id="works">
+			<h1 id="porthdin"> Works </h1>
 			<div class="row">
 				<div class="col-md-8 section-1 nopadding" id="work">
-					<div class="logo-1 wp1"></div>
+					<img src="img/works/mkti2.jpg"  />
+					
 				</div>
 				<div class="col-md-4 section-text nopadding">
 					<div class="wp4">
@@ -239,7 +240,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="container-fluid" id="shop">
+		<!-- <div class="container-fluid" id="shop">
 			<div class="row">
 				<div id="effect" class="effects clearfix">
 					<div class="col-md-4 left nopadding">
@@ -324,31 +325,21 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+		<div class="container-fluid" id="contact">
+			<div class="row" id="feed">
+				<div id="feedbox">
+					<form>
+						<input type="text" placeholder="Name" />
+						<input type="email" placeholder="Email ID"/>
+						<input type="text" placeholder="" />
+						<input type="submit" />
+					</form>
+				</div>
+			</div>
 		</div>
-		<section class="discover">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4">
-						<a href="#" class="shop-btn">Discover The Shop</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="sign_up">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 sign-up">
-						<h2 class="logo-header">Stay on the saddle!</h2>
-						<form name="signup-form">
-							<input class="signup-input" type="email" name="email_address" value="" placeholder="enter your email..." title="Please enter a valid email address." required>
-							<button type="submit" class="submit-btn">GO</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer id="contact">
-			<div class="container">
+		<footer>
+			<div class="container">	
 				<div class="row">
 					<div class="col-md-4 footer-leftcol">
 						<p><span class="bold-16p">AOD New York</span><br>
@@ -370,17 +361,68 @@
 				</div>
 			</div>
 		</footer>
+		<!-- <section class="discover">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<a href="#" class="shop-btn">Discover The Shop</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sign_up">
+			<div class="container nopadding" id="feed">
+				<div class="row">
+					<div class="col-md-12" >
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 sign-up">
+						<h2 class="logo-header">Stay on the saddle!</h2>
+						<form name="signup-form">
+							<input class="signup-input" type="email" name="email_address" value="" placeholder="enter your email..." title="Please enter a valid email address." required>
+							<button type="submit" class="submit-btn">GO</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="contact">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-md-4 footer-leftcol">
+						<p><span class="bold-16p">AOD New York</span><br>
+						2250 Lexington Avenue<br>
+						New York, NY 10035 - <a href="#">info@domain.com</a>
+						</p>
+					</div>
+					<div class="col-md-4 footer-midcol">
+						<ul>
+							<li><a href="#" class="twitter-icon">Twitter</a></li>
+							<li><a href="#" class="facebook-icon">Facebook</a></li>
+							<li><a href="#" class="pintrest-icon">Pintrest</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4 footer-rightcol">
+						
+					</div>
+				</div>
+			</div>
+		</footer> -->
 	</div>
 		<div class="component">
 				<!-- Start Nav Structure -->
 				<button class="cn-button" id="cn-button">+</button>
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
-				      <li><a href="#"><span class="fa fa-users"></span></a></li>
-				      <li><a href="#"><span class="fa fa-user"></span></a></li>
+				      <li><a href="#clients"><span class="fa fa-users"></span></a></li>
+				      <li><a href="#about"><span class="fa fa-user"></span></a></li>
 				      <li><a href="#"><span class="fa fa-home"></span></a></li>
-				      <li><a href="#"><span class="fa fa-gears"></span></a></li>
-				      <li><a href="#"><span class="fa fa-phone-square"></span></a></li>
+				      <li><a href="#works"><span class="fa fa-gears"></span></a></li>
+				      <li><a href="#contact"><span class="fa fa-phone-square"></span></a></li>
 				     </ul>
 				</div>
 				<div id="cn-overlay" class="cn-overlay"></div>
@@ -389,10 +431,11 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		
+		 <script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
 		 <script src="js/rAF.js"></script>
         <script src="js/demo-2.js"></script>
-        
+       
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.flexslider.js"></script>
 		<script src="js/polyfills.js"></script>

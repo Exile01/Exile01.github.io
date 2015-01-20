@@ -218,7 +218,7 @@ nav { height: 85px; margin-top: 30px; position: relative; }
 .logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
 .responsive-logo { display: hidden; }header 
 {
-	 background:url('../img/hd2.jpg') fixed;
+	 background:url('../img/Top_view.jpg') fixed;
 	 background-size: cover;
 	 height: 100%;
 }
@@ -227,7 +227,32 @@ header ul li { list-style: none; float: left; text-transform: uppercase; letter-
 header ul li a { display: block; margin: 0 30px; color: #4d4959; }
 .r_spacer { margin-right: 180px; }
 .intro { padding: 115px 0; background-color: #fbfbfb; }
-.section-1 { background: url(../img/left-box-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-1
+ {
+ 	 
+ 	       position: relative;
+ 	       overflow: hidden;
+ 	      height:600px;
+}
+.section-1 img
+{
+	width: 110%;
+	transform: translateX(-20px);
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	-o-transform: translateX(-20px);
+	 transition: all 0.1s;
+ 	 -webkit-transition: all 0.2s;
+ 	 -moz-transition: all 0.2s;
+ 	 -o-transition: all 0.2s;
+}
+.section-1 img:hover
+{
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
 .section-2 { background: url(../img/left-box-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-3 { background: url(../img/red-frame.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-4 { background: url(../img/red-bike.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
@@ -276,7 +301,7 @@ a.close-overlay.hidden { display: none }
 .signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
 .submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
 section.sign_up { padding: 40px 0 110px 0; }
-footer { background-color: #f7f7f7; padding: 100px 0; }
+footer { padding: 100px 0; }
 footer p { font-size: 13px; margin: 0; }
 .footer-leftcol p { text-align: left; }
 .footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
@@ -871,4 +896,38 @@ nav a:focus {
 	border-color: #fff;
 	background: none;
 	color: #fff;
+}
+.logo-1:hover
+{
+	transform: translateX(10px);
+	transition: all 0.1s;
+}
+#contact
+{
+	background: url('../img/contact.jpg') fixed;
+	background-size:cover;
+	background-position: center;
+	min-height: 600px;
+}
+#feed
+{
+	background: rgba(0,0,0,0.8);
+	min-height: 600px;
+	padding: 10em;
+}
+#feedbox
+{
+	padding: 3em;
+	background: rgba(0,0,0,0.4);
+	width: 30%;
+}
+#feedbox input[type=text],#feedbox input[type=email]
+{
+	background: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent transparent #b5b5b5 #b5b5b5;
+	margin: 2em;
+	padding: 1em;
+	width: 5em;
 }
