@@ -526,9 +526,10 @@ Our mission is to help each of our customers build a world-class workforce that 
 			var d=new Date();
 			var n=d.getTime();
 			n=((n-current)/(1000*60*60*24)) + 25;
+			var hr=n*5;
 		    $('.h').data('targetValue', n);
 			$('.hh').data('targetValue', 8296);
-			$('.hhh').data('targetValue', 102);
+			$('.hhh').data('targetValue', hr);
 
 //basic setup
 $('.knob').knob({
