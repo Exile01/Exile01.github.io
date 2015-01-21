@@ -192,6 +192,9 @@ Posters and still images
 .scene:nth-child(6) .poster {
   background-image: url(../img/debanjan.jpg);
 }
+.scene:nth-child(7) .poster {
+  background-image: url(../img/surya.jpg);
+}
 
 /*************************************
 Fallback

@@ -1565,3 +1565,7 @@ p {
 {
 	font-size: 3em;
 }
+#clients ul li img
+{
+	width: 200px;
+}
