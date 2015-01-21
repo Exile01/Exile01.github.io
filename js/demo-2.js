@@ -132,6 +132,14 @@
                     points[i].circle.active = 0.05;
                 }
                 else if(Math.abs(getDistance(target, points[i])) < 120000) {
+                    points[i].active = 0.003;
+                    points[i].circle.active = 0.03;
+                }
+                 else if(Math.abs(getDistance(target, points[i])) < 180000) {
+                    points[i].active = 0.002;
+                    points[i].circle.active = 0.02;
+                }
+                 else if(Math.abs(getDistance(target, points[i])) < 220000) {
                     points[i].active = 0.001;
                     points[i].circle.active = 0.01;
                 }
