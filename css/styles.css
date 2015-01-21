@@ -1025,7 +1025,7 @@ nav a:focus {
 	background: none;
 	border-width: 1px;
 	border-style: solid;
-	border-color: transparent transparent #b5b5b5 #b5b5b5;
+	border-color: transparent transparent #b5b5b5 rgba(181, 181, 181,0.4);
 	margin: 1em 0.5em;
 	padding: 1em;
 	width: 17em;
@@ -1035,7 +1035,7 @@ nav a:focus {
 	background: none;
 	border-width: 1px;
 	border-style: solid;
-	border-color: transparent transparent #b5b5b5 #b5b5b5;
+	border-color: transparent transparent #b5b5b5 rgba(181, 181, 181,0.4);
 	margin: 1em 0.5em;
 	padding: 1em;
 	min-height:6em;
@@ -1300,7 +1300,7 @@ p {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #fff ;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1315,7 +1315,7 @@ p {
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #e74c3c;
+        border-top-color: rgb(255, 157, 0);
 
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1330,7 +1330,7 @@ p {
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #f9c922;
+        border-top-color: #fff;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1555,4 +1555,13 @@ p {
     h3 {
         page-break-after: avoid;
     }
+}
+#clients
+{
+	min-height: 400px;
+	
+}
+#clients h2
+{
+	font-size: 3em;
 }
