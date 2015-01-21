@@ -28,6 +28,10 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+</div>
 		<div id="marker"> </div>
 		<div id="logo2">
 			<img class="logo" src="img/logo1_2B.png"/>
@@ -482,6 +486,12 @@ Now that you know a little bit about us, tell us about your organization and how
 			</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
 		<script src="js/jquery.min.js"></script>
+		<script>
+			$(window).load(function(){
+				$('#loader-wrapper').fadeOut();
+				
+			})
+		</script>
 		<script src="js/scrollReveal.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		 <script src="js/TweenLite.min.js"></script>
@@ -500,7 +510,7 @@ Now that you know a little bit about us, tell us about your organization and how
 			var current=1421827602124;
 			var d=new Date();
 			var n=d.getTime();
-			n=((n-current)/(1000*60*60*24)) + 32;
+			n=((n-current)/(1000*60*60*24)) + 25;
 		    $('.h').data('targetValue', n);
 			$('.hh').data('targetValue', 8296);
 			$('.hhh').data('targetValue', 102);

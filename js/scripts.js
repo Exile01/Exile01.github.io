@@ -29,6 +29,10 @@ $(window).load(function() {
 
 //OVERLAYS
 $(document).ready(function() {
+	
+	
+	
+	
   if (Modernizr.touch) {
     // show the close overlay button
     $(".close-overlay").removeClass("hidden");
