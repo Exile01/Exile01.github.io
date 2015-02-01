@@ -21,19 +21,36 @@ h1,h2,h3,h4,h5,h6,p
 }
 .head-left{
 	float:left;
+	width: 40%;
 }
 .head-right{
 	float:right;
 	width: 46%;
 }
+.head-left *
+{
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+}
+.head-left h3,h5
+{
+	float: right;
+	vertical-align: baseline;
+}
 .head-left a
 {
 	font-size: 3.5em;
+	float: left;
 }
+
 .head-left a:hover
 {
 	text-decoration: none;
 	color: #000;
+}
+#rndm2
+{
+	width: 400px;
 }
 .phone {
 	float: left;
@@ -696,10 +713,11 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 }
 .galary-grid-text h6{
 	color:#1E1E1E;
-	font-size: 16px;
+	font-size: 1.4em;
 	font-weight: 700;
 	line-height: 1.5em;
 	margin: 0.5em 0;
+	text-align: center;
 }
 .galary-grid-text p{
 	font-size: 16px;
@@ -820,6 +838,10 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 .contact-grid-left{
 	padding:1em;
 }
+.contact-grid-left>*
+{
+	text-align: center;
+}
 .contact-grid-left h6{
 	color:#1E1E1E;
 	font-size: 16px;
@@ -900,6 +922,7 @@ form input[type="submit"]:hover{
 .footer{
 	background:rgb(47, 206, 156);
 	padding: 2em 0;
+	margin-top:2em; 
 }
 .footer p{
 	color:#FFF;
@@ -955,7 +978,7 @@ form input[type="submit"]:hover{
 }
 .logo
 {
-	width: 200px;
+	width: 100px;
 }
 .sticky
 {
@@ -993,7 +1016,7 @@ span.menu {
 /*-- responsive-design --*/
 @media (max-width:1440px){
 	.banner-info {
-		width: 46%;
+		width: 40%;
 	}
 }
 @media (max-width:1366px){
